@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Scramble Game</h1>
+        <div class="game">
+            <div class="game-controls">
+                <label for="category">Choose a category:</label>
+                <select id="category">
+                    <option value="fruits">Fruits</option>
+                    <option value="animals">Animals</option>
+                    <option value="food_and_baverages">Food and baverages</option>
+                    <option value="transportation">Transportation</option>
+                </select>
+                <button onclick="setCategory()">Start Game</button>
+            </div>
+            <div class="game-board">
+                <div class="word-container">
+                    <div id="scrambled-word"></div>
+                </div>
+                <div class="image-container">
+                    <img id="scrambled-word-image" src="" alt="Scrambled Word Image">
+                </div>
+                <input type="text" id="user-input" placeholder="Enter your answer...">
+                <button onclick="checkWord()">Submit</button>
+                <p id="result"></p>
+                <p id="chances"></p>
+                <p id="score"></p>
+            </div>
+        </div>
+        <div id="end-game-alert" class="end-game-alert">
+            <p>Game Over!</p>
+            <p>Your total score is: <span id="total-score"></span></p>
+            <button onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
