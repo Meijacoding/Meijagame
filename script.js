@@ -5,7 +5,7 @@ const wordsWithImages = {
         { word: "coconut", image: "images/fruits/coconut.png" },
         { word: "dragon-fruit", image: "images/fruits/dragon-fruit.png" },
         { word: "grape", image: "images/fruits/grape.png" },
-        { word: "jack-fruit", image: "images/fruits/jack-fruit.png" },
+        { word: "jackfruit", image: "images/fruits/jackfruit.png" },
         { word: "melon", image: "images/fruits/melon.png" },
         { word: "orange", image: "images/fruits/orange.png" },
         { word: "peach", image: "images/fruits/peach.png" },
